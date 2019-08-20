@@ -3,7 +3,7 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    # TODO: remove me
+    field :me, Types::UserType, null: true
     field :items,
       [Types::ItemType],
       null: false,
@@ -11,6 +11,10 @@ module Types
 
     def items
       Item.preload(:user)
+    end
+
+    def me
+      context[:current_user]
     end
   end
 end
