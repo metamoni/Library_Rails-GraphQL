@@ -1,6 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-However, there's nothing to add here for now.
+Full tutorial on <a href="https://evilmartians.com/chronicles/graphql-on-rails-3-on-the-way-to-perfection">Evil Martians</a>
